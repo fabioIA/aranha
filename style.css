@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Inter&family=Nunito:wght@700&family=Yellowtail&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.quiz {
+    background-color: rgb(206, 75, 75);
+    width: 85vw;
+    text-align: center;
+    margin: auto;
+    font-weight: 600;
+    font-size: 2vh;
+    border-radius: 1em;
+    margin-top: 6em;
+    height: auto;
+}
+
+.quiz > span, .quiz > h1, #teiar > h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Títulos do quiz */
+.quiz > h1, #teiar > h1 {
+    font-size: 3vh;
+}
+
+h3 {
+    margin-top: 1em;
+}
+
+/* Botão de enviar */
+#enviar {
+    margin: 1em;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 3em;
+    border: solid 2px rgb(150, 42, 42);
+    background-color: rgb(245, 100, 100);
+    font-weight: bold;
+    width: 30vw;
+    transition: all 0.7s;
+}
+
+/* Entradas  */
+.entradas {
+    border: none;
+    padding: 4px;
+    border-radius: 3px;
+    width: 75vw;
+    margin-left: 10px;
+}
+
+/* Marcação do nome */
+mark {
+    background-color: rgba(255, 255, 255, 0.243);
+    padding: 5px;
+    border-radius: 2px;
+    color: rgb(133, 31, 31);
+}
+
+/* Inputs */
+#idade, #transporte, #musica, select {
+    border-radius: 7px;
+    border: none;
+    transform: scale(0.8);
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: rgb(249, 200, 200);
+    outline: 0;
+}
+
+/* Tirar seta do input */
+.entradas > input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { 
+    -webkit-appearance: none; margin: 0; 
+}
+
+/* Spans */
+.entradas > span {
+    color: antiquewhite;
+}
+
+/* Imagens */
+#rosto {
+    margin-top: 1em;
+    border-radius: 0.5em;
+    border: solid 3px rgb(140, 59, 59);
+}
+
+/* Resultado */
+#resultado {
+    text-align: center;
+    color: azure;
+    font-size: 1.6vh;
+}
+
+/* Com o mouse em cima do botão */
+#enviar:hover {
+    background-color: rgba(255, 255, 255, 0.365);
+    transform: scale(1.07);
+}
+
+@media (min-width: 800px) {
+    
+    .quiz {
+        font-size: 1.2em;
+    }
+    
+    /* Títulos do quiz */
+    .quiz > h1, #teiar > h1 {
+        font-size: 4vh;
+    }
+    
+    /* Botão de enviar */
+    #enviar {
+        width: 15vw;
+    }
+    
+    /* Entradas  */
+    .entradas {
+        width: 30vw;
+        text-align: left;
+        margin-left: 2.5em;
+    }
+    
+    /* Inputs */
+    #idade, #transporte, #musica, option, select {
+        width: auto;
+        margin-top: 1em;
+    }
+    
+    /* Resultado */
+    #resultado {
+        font-size: 3vh;
+    }
+
+}

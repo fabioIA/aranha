@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Metade aranha</title>
+</head>
+<body>
+    <section id="quiz">
+        <div class="quiz">
+            <h1>Descubra seu metade aranha</h1>
+    
+            <div class="entradas">
+    
+                <!-- input da idade -->
+                <span>Digite sua idade:</span>
+                <input id="idade" min="1" max="234" type="number" value="" placeholder="0"><br>
+    
+                <!-- Escolha do transporte -->
+                <span>Transporte favorito?</span>
+                <select id="transporte">
+    
+                    <option value="transportes" data-default disabled selected>Transportes</option>
+                    <option value="skate">Skate</option>
+                    <option value="bicleta">Bicicleta</option>
+                    <option value="hoverboard">Hoverboard</option>
+    
+                </select><br>
+    
+                <!-- Escolha da música -->
+                <span>Genêro favorita?</span>
+                <select id="musica">
+    
+                    <option value="musica" data-default disabled selected>Músicas</option>
+                    <option value="eletronica">Eletrônica</option>
+                    <option value="rock">Rock</option>
+                    <option value="classica">Clássica</option>
+    
+                </select>
+            
+            </div>
+    
+            <!-- Div do resultado do quiz -->
+            <div id="resultado"></div><br>
+    
+            <!-- Botão de enviar -->
+            <input id="enviar" type="submit" onclick="document.getElementById('idade').value !== '' && document.getElementById('musica').value !== 'musica' && document.getElementById('transporte').value != 'transportes' ? Aranha() : alert('Preencha todos os campos')">
+            
+        </div>
+    
+    </section>
+
+    <script defer type="text/javascript" src="script.js"></script>
+</body>
+</html>
